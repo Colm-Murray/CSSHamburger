@@ -46,22 +46,22 @@
     transition: all 0.4s ease;
 }
 
-/* Top and bottom lines */
+/* Hamburger Lines - Top and bottom */
 
-.menu-wrap .hamburger > div:before, 
-.menu-wrap .hamburger > div:after {
+.menu-wrap .hamburger > div::before, 
+.menu-wrap .hamburger > div::after {
     content: "";
     position: absolute;
     z-index: 1;
     top: -10px;
     width: 100%;
-    height:2px;
+    height: 2px;
     background: inherit
 }
 
 /* Moves line down */
 
-.menu-wrap .hamburger > div:after { 
+.menu-wrap .hamburger > div::after { 
     top: 10px;
 }
 
@@ -87,7 +87,7 @@
 
 /* Show menu */
 .menu-wrap .toggler:checked ~ .menu {
-    visibility: visable; 
+    visibility: visible; 
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
